@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600;700&family=REM:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mochiy Pop One','Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(185, 237, 252);
+}
+
+#panel{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#ptop{
+    padding: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:90px ;
+    width:100% ;
+    color: #fff;
+    background-color: rgb(58, 58, 255);
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.box{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;   
+}
+
+#pbtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+   padding: 20px;
+    width: 100%;
+    height: calc(100% - 90px);
+}
+.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(124, 124, 255);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(58, 58, 255);
+}
+
+#play{
+    font-size: 50px;
+    cursor: pointer;
+}
+#pause{
+    font-size: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+#Default{
+    cursor: pointer;
+}
+#Dark{
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    #panel{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    h2{
+        font-size: 5px;
+    }
+    #ptop{
+        padding: 0px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:90px ;
+        width:100% ;
+        color: #fff;
+        background-color: rgb(58, 58, 255);
+    }
+    .elem{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+    .box{
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: blue;
+        font-size: 10px;
+        font-weight: 500;   
+    }
+    #maintheme{
+        display: none;
+    }
+
+}
